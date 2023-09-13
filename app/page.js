@@ -51,7 +51,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={`${
-          darkMode ? 'bg-body' : 'bg-body-color-alt'
+          darkMode ? 'bg-body-color' : 'bg-body-color-alt'
         }`}>
         <section>
         <nav className={`py-4 flex justify-between text-text-first-color ${
@@ -272,7 +272,7 @@ export default function Home() {
             </div>
             <div className="block">
               <h2 className="work_title">{item.category}</h2>
-              <p className={`${ darkMode ? 'about_description' : 'about_description-light' }`}> {item.description} </p>
+              <p className={`max-w-md ${darkMode ? 'about_description' : 'about_description-light'}`}>{item.description}</p>
               <a href={item.aboutLink} className="button1 button1--ghost" target="_blank" rel="noreferrer">About</a>
               <a href={item.demoLink} className="button1 button1--ghost" target="_blank" rel="noreferrer">Demo</a>
             </div> 

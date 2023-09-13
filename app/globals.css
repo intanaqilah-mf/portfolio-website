@@ -75,11 +75,6 @@ textarea {
   font-size: var(--normal-font-size);
 }
 
-body {
-  background-color: var(--body-color);
-  color: var(--text-color);
-  transition: .4s; /* for light mode animation */
-}
 .bg-body-color {
     background-color: var(--body-color);
     color: var(--text-color);
@@ -549,12 +544,13 @@ body.light-theme {
     font-size: var(--tiny-font-size);
     color: var(--box-color);
 }
-.about_description{
+.about_description {
     margin-bottom: 2rem;
     text-align: justify;
     text-justify: inter-word;
     color: var(--text-color-light);
-}
+  }
+  
 
 .about_description-light {
     margin-bottom: 2rem;
@@ -836,12 +832,13 @@ body.light-theme {
 
 .wrapper {
     display: flex;
-}
-
-.block {
-    flex: 1;
-    padding-right: 20px;
-}
+    align-items: center; /* Vertically align items */
+  }
+  
+  .block {
+    flex: 1; /* Distribute available space equally */
+    padding: 0 20px; /* Add some spacing between blocks */
+  }
 
 .block p {
     margin-bottom: 15px; /* Add bottom margin to create space between text and buttons */
@@ -849,7 +846,7 @@ body.light-theme {
 
 .block:first-child {
     /* For the image block (first child) */
-    padding-right: 80px; /* Optional: Add some spacing between the image and description */
+    padding-left: 200px; /* Optional: Add some spacing between the image and description */
 }
 
 /*=============== CONTACT ===============*/
