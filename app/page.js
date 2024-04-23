@@ -6,8 +6,7 @@ import { BsFillMoonStarsFill, BsFillSunFill } from 'react-icons/bs';
 import React from 'react';
 import Contact from "./Contact";
 import Image from 'next/image';
-
-
+import Link from 'next/link';
 export default function Home() {
   const [darkMode, setDarkMode] = useState(true);
   const [data,setData] = useState([]);
@@ -261,23 +260,25 @@ export default function Home() {
 ))}
 
 
-   
     </div>
       <div className="work_container container grid">
-        {data.map((item) => (
-          <div key={item.id} className={`wrapper mix ${item.filterClass}`}>
-            <div className="block">
-            <Image src={item.image} alt={item.title} width={item.width}
-      height={item.height}/>
-            </div>
-            <div className="block">
-              <h2 className="work_title">{item.category}</h2>
-              <p className={`max-w-md ${darkMode ? 'about_description' : 'about_description-light'}`}>{item.description}</p>
-              <a href={item.aboutLink} className="button1 button1--ghost" target="_blank" rel="noreferrer">About</a>
-              <a href={item.demoLink} className="button1 button1--ghost" target="_blank" rel="noreferrer">Demo</a>
-            </div> 
-          </div>
-        ))}
+      {data.map((item) => (
+    <div key={item.id} className={`wrapper mix ${item.filterClass}`}>
+        <div className="block">
+            <Image src={item.image} alt={item.title} width={item.width} height={item.height}/>
+        </div>
+        <div className="block">
+            <h2 className="work_title">{item.category}</h2>
+            <p className={`max-w-md ${darkMode ? 'about_description' : 'about_description-light'}`}>{item.description}</p>
+            <Link href={`/about/${item.path}`} legacyBehavior>
+  <a className="button1 button1--ghost">About</a>
+</Link>
+
+            <a href={item.demoLink} className="button1 button1--ghost" target="_blank" rel="noreferrer">Demo</a>
+        </div> 
+    </div>
+))}
+
       </div>
     </section>
     

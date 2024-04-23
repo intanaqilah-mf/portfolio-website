@@ -3,15 +3,14 @@ import React from 'react';
 const WorkFilters = () => {
   const filterItems = [
     { label: 'All', filter: 'all' },
-    { label: 'Website', filter: 'web' },
-    { label: 'UI', filter: 'UI' },
+    { label: 'Cross-Platform Development', filter: 'web' },
     { label: 'Database', filter: 'database' },
+    { label: 'UI', filter: 'UI' },
+    { label: 'DevOps and Cloud', filter: 'devops' },
+    { label: 'Data Analytics, AI and ML', filter: 'aiml' },
   ];
 
   const handleFilterClick = (filter) => {
-    // Implement the filter functionality here
-    // For example, you can set the active filter in the component's state
-    // or pass it to a parent component to handle filtering logic.
     console.log(`Filter clicked: ${filter}`);
   };
 
