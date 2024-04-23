@@ -17,7 +17,7 @@ export const portfolioGallery = [
         description: "This project showcases my expertise in building apps that run across multiple platforms using a single codebase.",
         width: 450,
         height: 350,
-        path: "Database/sportPHP",
+        path: "Database/SportPHP",
         demoLink: "https://pendaftaran-acara-intan-4191c8bdad3f.herokuapp.com/",
     },
     {
