@@ -106,7 +106,12 @@ h1, h2, h3 {
 ul {
   list-style: none;
 }
-
+/* Assuming you have a dark mode class on your body or a container element */
+.code-block-dark {
+    background-color: transparent; /* Or any dark color you want, e.g., #1E1E1E */
+    color: #FF73D3; /* Light text color suitable for dark backgrounds */
+    /* Additional styles for a dark theme */
+  }
 a {
   text-decoration: none;
 }
