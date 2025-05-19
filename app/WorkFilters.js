@@ -3,7 +3,7 @@ import React from 'react';
 const WorkFilters = () => {
   const filterItems = [
     { label: 'All', filter: 'all' },
-    { label: 'Cross-Platform Development', filter: 'web' },
+    { label: 'MobileApps', filter: 'mobile' },
     { label: 'Database', filter: 'database' },
     { label: 'UI', filter: 'UI' },
     { label: 'DevOps and Cloud', filter: 'devops' },

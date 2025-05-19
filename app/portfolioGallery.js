@@ -1,12 +1,12 @@
 export const portfolioGallery = [
     {
         id:1,
-        title:"Cross-Platform Development",
-        image:"/database.gif",
-        category: "Sport Website",
+        title:"MobileApps",
+        image:"/Smart Move Vid.gif",
+        category: "Smart Move",
         width: 450,
         height: 350,
-        path: "/about/Database",
+        path: "MobileApps/SmartMove",
         demoLink: "/demo/cross-platform",
     },
     {

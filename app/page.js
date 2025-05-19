@@ -105,7 +105,7 @@ export default function Home() {
             <div className="about_data text-initial">
             <p className={`${
   darkMode ? 'about_description' : 'about_description-light'}`}>
-  Hello! Just address me as Ceyyy. I am a Computer Science student, one of the Yayasan TM scholars, and a GDSC (Google Developer Student Club) core team member in the technical department.
+  Hello! Just address me as Intan. I am a Computer Science student, one of the Yayasan TM scholars, and a GDSC (Google Developer Student Club) core team member in the technical department.
   <br /><br />
   I have learned programming since 2018 until now and now I&apos;m collecting my projects to showcase it. Please, take a look.
   <br /><br />
