@@ -130,8 +130,8 @@ export default function Home() {
                   If you have any questions, feel free to reach me out!
                 </p>
 
-                <a download href=" " className="button button--ghost">
-                  Download CV
+                <a download href="Resume Intan Aqilah.pdf" className="button button--ghost">
+                  Download Resume
                 </a>
               </div>
               <div className="flex justify-end mr-20">
