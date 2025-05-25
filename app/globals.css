@@ -795,9 +795,81 @@ body.light-theme {
 }
 
 .work_card {
-    background-color: var(--container-color);
-    padding: 1rem;
-    border-radius: 1rem;
+  /* same padding, rounding, shadow & alignment */
+  padding: 1.5rem !important;
+  border-radius: 1.25rem !important;
+  box-shadow: 0 2px 4px pink; /* Removed !important */
+  text-align: center !important;
+  margin: 0 auto 2rem !important;
+  
+  /* FIXED width to match skills cards */
+  width: 600px !important;
+  
+}
+
+/* Title = exactly .skills_title */
+.work_card > h3.work_title {
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-semibold);
+  color: var(--first-color);
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+/* Tech-stack list */
+.work_card ul.flex.flex-wrap.gap-2.mb-4 {
+  justify-content: center;
+  gap: 0.5rem 1rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Tech-stack badges */
+.work_card ul.flex.flex-wrap.gap-2.mb-4 > li {
+  font-size: var(--tiny-font-size);
+  padding: .25rem .5rem;
+  border-radius: .25rem;
+  background-color: var(--first-color-alt);
+  color: var(--body-color);
+}
+.work_container {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  justify-content: center !important;
+  gap: 2rem !important;           /* same as gap-8 */
+}
+
+.work_card .flex.gap-4 {
+  justify-content: center;
+  gap: 1rem;
+}
+.work_card .work_title {
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-semibold);
+  color: var(--first-color);
+  margin-bottom: 1rem;
+}
+
+/* tech-stack list just like your tags */
+.work_card .tech_stack {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: .5rem 1rem;
+  margin-bottom: 1.5rem;
+}
+.work_card .tech_stack li {
+  font-size: var(--tiny-font-size);
+  padding: .25rem .5rem;
+  border-radius: .25rem;
+  background-color: var(--first-color-alt);
+  color: var(--container-color);
+}
+
+/* buttons row */
+.work_card .work_buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
 }
 
 .work_img{
@@ -1180,7 +1252,7 @@ body.light-theme {
         grid-template-columns: repeat(1, max-content);
     }
     .work_card {
-        padding: 1.25rem;
+        box-shadow: 0 2px 4px pink;
     }
     .work_img {
         margin-bottom: 1rem;
