@@ -130,7 +130,7 @@ export default function Home() {
                   If you have any questions, feel free to reach me out!
                 </p>
 
-                <a download href="Resume Intan Aqilah.pdf" className="button button--ghost">
+                <a download href="/Resume_Intan_Aqilah.pdf" className="button button--ghost">
                   Download Resume
                 </a>
               </div>
