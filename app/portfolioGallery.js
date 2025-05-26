@@ -30,9 +30,9 @@ export const portfolioGallery = [
         category: "Sport Website",
         techStack: ["PHP", "MySQL", "Heroku"],
         description: "This project showcases my expertise in building apps that run across multiple platforms using a single codebase.",
-        width: 450,
+        width: 450, 
         height: 350,
         path: "Database/SportPHP",
-        demoLink: "https://pendaftaran-acara-intan-4191c8bdad3f.herokuapp.com/",
+        demoLink: "https://sport-reg.de.r.appspot.com/pengguna_daftar.php",
     }
 ]
