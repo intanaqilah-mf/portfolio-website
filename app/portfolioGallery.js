@@ -14,14 +14,14 @@ export const portfolioGallery = [
     {
         id:2,
         title:"MobileApps",
-        image:"/database.gif",
+        image:"/Kita_tongtong.jpg",
         category: "Kita Tongtong",
         techStack: ["Flutter", "Firebase", "Node JS", "Python"],
         description: "This project is for my FYP.",
         width: 450,
         height: 350,
         path: "Database/SportPHP",
-        demoLink: "https://pendaftaran-acara-intan-4191c8bdad3f.herokuapp.com/",
+        demoLink: "https://kita-tongtong-8cda4.web.app/",
     },
     {
         id:3,
