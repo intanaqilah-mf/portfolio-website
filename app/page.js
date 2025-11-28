@@ -121,13 +121,11 @@ export default function Home() {
 
               <div className="about_data text-initial">
                 <p className={`${darkMode ? 'about_description' : 'about_description-light'}`}>
-                  Hello! Just address me as Intan. I am a Computer Science student, one of the Yayasan TM scholars, and a GDSC (Google Developer Student Club) core team member in the technical department.
+                  Hello! I&apos;m Intan, a Software Engineer and Solution Developer specializing in full-stack development and AI-powered solutions. As a recent BSc Computer Science graduate and Yayasan TM scholar, I&apos;ve built enterprise-level systems for clients like PETRONAS, leveraging MERN stack, cloud platforms (GCP, Azure), and AI technologies to automate complex workflows.
                   <br /><br />
-                  I have learned programming since 2018 until now and now I&apos;m collecting my projects to showcase it. Please, take a look.
+                  I&apos;m a Top 10 KitaHack 2025 Finalist and hold certifications in CompTIA Cloud+ and MERN Full Stack, with Google Professional Cloud Architect certification in progress. My expertise spans building scalable web applications, mobile apps with Flutter, and cloud-native solutions that deliver measurable impact—like reducing manual work from years to hours through AI automation.
                   <br /><br />
-                  I am specialized more in the frontend area so building websites is my expertise. I am currently learning Flutter for Android apps and backend programming so hopefully can bring more functionality to my projects. #roadtofullstackdeveloper
-                  <br /><br />
-                  If you have any questions, feel free to reach me out!
+                  Currently expanding my skills in cloud architecture and AI/ML integration. Feel free to explore my projects and reach out!
                 </p>
 
                 <a download href="/Resume_Intan_Aqilah.pdf" className="button button--ghost">
@@ -154,30 +152,39 @@ export default function Home() {
             <span className="section_subtitle">Abilities</span>
             <h2 className="section_title">My skills</h2>
 
-            <div className="skills_container container grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="skills_container container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+              {/* Frontend Development */}
               <div className={`skills_content ${darkMode ? 'bg-box-color' : 'bg-box-color-alt'}`}
                 style={{
-                  boxShadow: darkMode ? '0 2px 4px pink' : '0 2px 4px hsla(var(--second-hue), 8%, 54%)', // You might want to remove this if CSS handles it
+                  boxShadow: darkMode ? '0 2px 4px pink' : '0 2px 4px hsla(var(--second-hue), 8%, 54%)',
                   padding: '1.5rem',
                   borderRadius: '1.25rem',
                 }}>
-                <h3 className={` ${darkMode ? 'skills_title' : 'skills_title'}`}>Frontend developer</h3>
+                <h3 className={` ${darkMode ? 'skills_title' : 'skills_title'}`}>Frontend Development</h3>
 
                 <div className="skills_box">
                   <div className="skills_group">
                     <div className="skills_data">
                       <i className="bx bx-badge-check"></i>
                       <div>
-                        <h3 className={`skills_name ${darkMode ? '' : 'text-first-color'}`}>HTML</h3>
-                        <span className={` ${darkMode ? 'skills_level' : 'skills_level-alt'}`}>Advanced</span>
+                        <h3 className={`skills_name ${darkMode ? '' : 'text-first-color'}`}>ReactJS</h3>
+                        <span className={` ${darkMode ? 'skills_level' : 'skills_level-alt'}`}>Expert</span>
                       </div>
                     </div>
 
                     <div className="skills_data">
                       <i className="bx bx-badge-check"></i>
                       <div>
-                        <h3 className={`skills_name ${darkMode ? '' : 'text-first-color'}`}>CSS</h3>
-                        <span className={` ${darkMode ? 'skills_level' : 'skills_level-alt'}`}>Advanced</span>
+                        <h3 className={`skills_name ${darkMode ? '' : 'text-first-color'}`}>TypeScript</h3>
+                        <span className={` ${darkMode ? 'skills_level' : 'skills_level-alt'}`}>Expert</span>
+                      </div>
+                    </div>
+
+                    <div className="skills_data">
+                      <i className="bx bx-badge-check"></i>
+                      <div>
+                        <h3 className={`skills_name ${darkMode ? '' : 'text-first-color'}`}>Flutter</h3>
+                        <span className={` ${darkMode ? 'skills_level' : 'skills_level-alt'}`}>Expert</span>
                       </div>
                     </div>
                   </div>
@@ -186,64 +193,280 @@ export default function Home() {
                     <div className="skills_data">
                       <i className="bx bx-badge-check"></i>
                       <div>
-                        <h3 className={`skills_name ${darkMode ? '' : 'text-first-color'}`}>Dart</h3>
-                        <span className={` ${darkMode ? 'skills_level' : 'skills_level-alt'}`}>Basic</span>
+                        <h3 className={`skills_name ${darkMode ? '' : 'text-first-color'}`}>HTML/CSS</h3>
+                        <span className={` ${darkMode ? 'skills_level' : 'skills_level-alt'}`}>Expert</span>
                       </div>
                     </div>
 
                     <div className="skills_data">
                       <i className="bx bx-badge-check"></i>
                       <div>
-                        <h3 className={`skills_name ${darkMode ? '' : 'text-first-color'}`}>React</h3>
-                        <span className={` ${darkMode ? 'skills_level' : 'skills_level-alt'}`}>Basic</span>
+                        <h3 className={`skills_name ${darkMode ? '' : 'text-first-color'}`}>Responsive Design</h3>
+                        <span className={` ${darkMode ? 'skills_level' : 'skills_level-alt'}`}>Expert</span>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
 
+              {/* Backend Development */}
               <div className={`skills_content ${darkMode ? 'bg-box-color' : 'bg-box-color-alt'}`}
                 style={{
-                  boxShadow: darkMode ? '0 2px 4px pink' : '0 2px 4px hsla(var(--second-hue), 8%, 54%)', // You might want to remove this if CSS handles it
+                  boxShadow: darkMode ? '0 2px 4px pink' : '0 2px 4px hsla(var(--second-hue), 8%, 54%)',
                   padding: '1.5rem',
                   borderRadius: '1.25rem',
                 }}>
-                <h3 className={` ${darkMode ? 'skills_title' : 'skills_title'}`}>Backend developer</h3>
+                <h3 className={` ${darkMode ? 'skills_title' : 'skills_title'}`}>Backend Development</h3>
 
                 <div className="skills_box">
                   <div className="skills_group">
                     <div className="skills_data">
                       <i className="bx bx-badge-check"></i>
                       <div>
-                        <h3 className={`skills_name ${darkMode ? '' : 'text-first-color'}`}>Javascript</h3>
-                        <span className={` ${darkMode ? 'skills_level' : 'skills_level-alt'}`}>Advanced</span>
+                        <h3 className={`skills_name ${darkMode ? '' : 'text-first-color'}`}>Node.js</h3>
+                        <span className={` ${darkMode ? 'skills_level' : 'skills_level-alt'}`}>Expert</span>
                       </div>
                     </div>
 
                     <div className="skills_data">
                       <i className="bx bx-badge-check"></i>
                       <div>
-                        <h3 className={`skills_name ${darkMode ? '' : 'text-first-color'}`}>PHP</h3>
-                        <span className={` ${darkMode ? 'skills_level' : 'skills_level-alt'}`}>Advanced</span>
+                        <h3 className={`skills_name ${darkMode ? '' : 'text-first-color'}`}>Express.js</h3>
+                        <span className={` ${darkMode ? 'skills_level' : 'skills_level-alt'}`}>Expert</span>
+                      </div>
+                    </div>
+
+                    <div className="skills_data">
+                      <i className="bx bx-badge-check"></i>
+                      <div>
+                        <h3 className={`skills_name ${darkMode ? '' : 'text-first-color'}`}>Fastify</h3>
+                        <span className={` ${darkMode ? 'skills_level' : 'skills_level-alt'}`}>Expert</span>
                       </div>
                     </div>
                   </div>
 
                   <div className="skills_group">
-
                     <div className="skills_data">
                       <i className="bx bx-badge-check"></i>
                       <div>
-                        <h3 className={`skills_name ${darkMode ? '' : 'text-first-color'}`}>C++</h3>
-                        <span className={` ${darkMode ? 'skills_level' : 'skills_level-alt'}`}>Advanced</span>
+                        <h3 className={`skills_name ${darkMode ? '' : 'text-first-color'}`}>PHP</h3>
+                        <span className={` ${darkMode ? 'skills_level' : 'skills_level-alt'}`}>Expert</span>
                       </div>
                     </div>
 
                     <div className="skills_data">
                       <i className="bx bx-badge-check"></i>
                       <div>
-                        <h3 className={`skills_name ${darkMode ? '' : 'text-first-color'}`}>Kotlin</h3>
-                        <span className={` ${darkMode ? 'skills_level' : 'skills_level-alt'}`}>Basic</span>
+                        <h3 className={`skills_name ${darkMode ? '' : 'text-first-color'}`}>Spring Boot</h3>
+                        <span className={` ${darkMode ? 'skills_level' : 'skills_level-alt'}`}>Skilful</span>
+                      </div>
+                    </div>
+
+                    <div className="skills_data">
+                      <i className="bx bx-badge-check"></i>
+                      <div>
+                        <h3 className={`skills_name ${darkMode ? '' : 'text-first-color'}`}>RESTful API</h3>
+                        <span className={` ${darkMode ? 'skills_level' : 'skills_level-alt'}`}>Expert</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Databases */}
+              <div className={`skills_content ${darkMode ? 'bg-box-color' : 'bg-box-color-alt'}`}
+                style={{
+                  boxShadow: darkMode ? '0 2px 4px pink' : '0 2px 4px hsla(var(--second-hue), 8%, 54%)',
+                  padding: '1.5rem',
+                  borderRadius: '1.25rem',
+                }}>
+                <h3 className={` ${darkMode ? 'skills_title' : 'skills_title'}`}>Databases</h3>
+
+                <div className="skills_box">
+                  <div className="skills_group">
+                    <div className="skills_data">
+                      <i className="bx bx-badge-check"></i>
+                      <div>
+                        <h3 className={`skills_name ${darkMode ? '' : 'text-first-color'}`}>MongoDB</h3>
+                        <span className={` ${darkMode ? 'skills_level' : 'skills_level-alt'}`}>Expert</span>
+                      </div>
+                    </div>
+
+                    <div className="skills_data">
+                      <i className="bx bx-badge-check"></i>
+                      <div>
+                        <h3 className={`skills_name ${darkMode ? '' : 'text-first-color'}`}>MySQL</h3>
+                        <span className={` ${darkMode ? 'skills_level' : 'skills_level-alt'}`}>Expert</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="skills_group">
+                    <div className="skills_data">
+                      <i className="bx bx-badge-check"></i>
+                      <div>
+                        <h3 className={`skills_name ${darkMode ? '' : 'text-first-color'}`}>Oracle</h3>
+                        <span className={` ${darkMode ? 'skills_level' : 'skills_level-alt'}`}>Expert</span>
+                      </div>
+                    </div>
+
+                    <div className="skills_data">
+                      <i className="bx bx-badge-check"></i>
+                      <div>
+                        <h3 className={`skills_name ${darkMode ? '' : 'text-first-color'}`}>Firebase</h3>
+                        <span className={` ${darkMode ? 'skills_level' : 'skills_level-alt'}`}>Expert</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Cloud & DevOps */}
+              <div className={`skills_content ${darkMode ? 'bg-box-color' : 'bg-box-color-alt'}`}
+                style={{
+                  boxShadow: darkMode ? '0 2px 4px pink' : '0 2px 4px hsla(var(--second-hue), 8%, 54%)',
+                  padding: '1.5rem',
+                  borderRadius: '1.25rem',
+                }}>
+                <h3 className={` ${darkMode ? 'skills_title' : 'skills_title'}`}>Cloud & DevOps</h3>
+
+                <div className="skills_box">
+                  <div className="skills_group">
+                    <div className="skills_data">
+                      <i className="bx bx-badge-check"></i>
+                      <div>
+                        <h3 className={`skills_name ${darkMode ? '' : 'text-first-color'}`}>Google Cloud</h3>
+                        <span className={` ${darkMode ? 'skills_level' : 'skills_level-alt'}`}>Expert</span>
+                      </div>
+                    </div>
+
+                    <div className="skills_data">
+                      <i className="bx bx-badge-check"></i>
+                      <div>
+                        <h3 className={`skills_name ${darkMode ? '' : 'text-first-color'}`}>Azure Cloud</h3>
+                        <span className={` ${darkMode ? 'skills_level' : 'skills_level-alt'}`}>Expert</span>
+                      </div>
+                    </div>
+
+                    <div className="skills_data">
+                      <i className="bx bx-badge-check"></i>
+                      <div>
+                        <h3 className={`skills_name ${darkMode ? '' : 'text-first-color'}`}>AWS</h3>
+                        <span className={` ${darkMode ? 'skills_level' : 'skills_level-alt'}`}>Experience</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="skills_group">
+                    <div className="skills_data">
+                      <i className="bx bx-badge-check"></i>
+                      <div>
+                        <h3 className={`skills_name ${darkMode ? '' : 'text-first-color'}`}>GitHub Actions</h3>
+                        <span className={` ${darkMode ? 'skills_level' : 'skills_level-alt'}`}>Experience</span>
+                      </div>
+                    </div>
+
+                    <div className="skills_data">
+                      <i className="bx bx-badge-check"></i>
+                      <div>
+                        <h3 className={`skills_name ${darkMode ? '' : 'text-first-color'}`}>CI/CD Pipelines</h3>
+                        <span className={` ${darkMode ? 'skills_level' : 'skills_level-alt'}`}>Experience</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* AI/ML & Microsoft Tools */}
+              <div className={`skills_content ${darkMode ? 'bg-box-color' : 'bg-box-color-alt'}`}
+                style={{
+                  boxShadow: darkMode ? '0 2px 4px pink' : '0 2px 4px hsla(var(--second-hue), 8%, 54%)',
+                  padding: '1.5rem',
+                  borderRadius: '1.25rem',
+                }}>
+                <h3 className={` ${darkMode ? 'skills_title' : 'skills_title'}`}>AI/ML & Tools</h3>
+
+                <div className="skills_box">
+                  <div className="skills_group">
+                    <div className="skills_data">
+                      <i className="bx bx-badge-check"></i>
+                      <div>
+                        <h3 className={`skills_name ${darkMode ? '' : 'text-first-color'}`}>Vertex AI</h3>
+                        <span className={` ${darkMode ? 'skills_level' : 'skills_level-alt'}`}>Experience</span>
+                      </div>
+                    </div>
+
+                    <div className="skills_data">
+                      <i className="bx bx-badge-check"></i>
+                      <div>
+                        <h3 className={`skills_name ${darkMode ? '' : 'text-first-color'}`}>Azure Doc Intelligence</h3>
+                        <span className={` ${darkMode ? 'skills_level' : 'skills_level-alt'}`}>Experience</span>
+                      </div>
+                    </div>
+
+                    <div className="skills_data">
+                      <i className="bx bx-badge-check"></i>
+                      <div>
+                        <h3 className={`skills_name ${darkMode ? '' : 'text-first-color'}`}>OCR Technologies</h3>
+                        <span className={` ${darkMode ? 'skills_level' : 'skills_level-alt'}`}>Experience</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="skills_group">
+                    <div className="skills_data">
+                      <i className="bx bx-badge-check"></i>
+                      <div>
+                        <h3 className={`skills_name ${darkMode ? '' : 'text-first-color'}`}>n8n</h3>
+                        <span className={` ${darkMode ? 'skills_level' : 'skills_level-alt'}`}>Experience</span>
+                      </div>
+                    </div>
+
+                    <div className="skills_data">
+                      <i className="bx bx-badge-check"></i>
+                      <div>
+                        <h3 className={`skills_name ${darkMode ? '' : 'text-first-color'}`}>Power Platform</h3>
+                        <span className={` ${darkMode ? 'skills_level' : 'skills_level-alt'}`}>Expert</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Other Technologies */}
+              <div className={`skills_content ${darkMode ? 'bg-box-color' : 'bg-box-color-alt'}`}
+                style={{
+                  boxShadow: darkMode ? '0 2px 4px pink' : '0 2px 4px hsla(var(--second-hue), 8%, 54%)',
+                  padding: '1.5rem',
+                  borderRadius: '1.25rem',
+                }}>
+                <h3 className={` ${darkMode ? 'skills_title' : 'skills_title'}`}>Other Technologies</h3>
+
+                <div className="skills_box">
+                  <div className="skills_group">
+                    <div className="skills_data">
+                      <i className="bx bx-badge-check"></i>
+                      <div>
+                        <h3 className={`skills_name ${darkMode ? '' : 'text-first-color'}`}>Python</h3>
+                        <span className={` ${darkMode ? 'skills_level' : 'skills_level-alt'}`}>Skilful</span>
+                      </div>
+                    </div>
+
+                    <div className="skills_data">
+                      <i className="bx bx-badge-check"></i>
+                      <div>
+                        <h3 className={`skills_name ${darkMode ? '' : 'text-first-color'}`}>Java</h3>
+                        <span className={` ${darkMode ? 'skills_level' : 'skills_level-alt'}`}>Skilful</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="skills_group">
+                    <div className="skills_data">
+                      <i className="bx bx-badge-check"></i>
+                      <div>
+                        <h3 className={`skills_name ${darkMode ? '' : 'text-first-color'}`}>Git & Version Control</h3>
+                        <span className={` ${darkMode ? 'skills_level' : 'skills_level-alt'}`}>Expert</span>
                       </div>
                     </div>
                   </div>
@@ -251,6 +474,161 @@ export default function Home() {
               </div>
             </div>
           </section>
+
+          {/* Certifications Section */}
+          <section className="certifications section" id="certifications">
+            <span className="section_subtitle">Professional Credentials</span>
+            <h2 className="section_title">Certifications</h2>
+
+            <div className="certifications_container container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {/* CompTIA Cloud+ */}
+              <div className={`certification_card ${darkMode ? 'bg-box-color' : 'bg-box-color-alt'} transition-transform duration-300 hover:scale-105`}
+                style={{
+                  boxShadow: darkMode ? '0 2px 4px pink' : '0 2px 4px hsla(var(--second-hue), 8%, 54%)',
+                  padding: '2rem',
+                  borderRadius: '1.25rem',
+                  minHeight: '200px',
+                  display: 'flex',
+                  flexDirection: 'column',
+                }}>
+                <i className="bx bxs-cloud text-4xl mb-4" style={{ color: darkMode ? '#FF73D3' : '#d946ef' }}></i>
+                <div className="mb-4">
+                  <h3 className="text-xl font-semibold" style={{ color: darkMode ? '#FF73D3' : '#d946ef' }}>CompTIA Cloud+</h3>
+                  <div style={{ paddingTop: '2rem' }}>
+                    <p className="text-sm" style={{ color: darkMode ? '#FF73D3' : '#d946ef', opacity: 0.8 }}>CompTIA</p>
+                  </div>
+                </div>
+                <div className="mt-auto">
+                  <p className="text-sm mb-2" style={{ color: darkMode ? '#FF73D3' : '#d946ef', opacity: 0.7 }}>November 2025</p>
+                  <div className={`inline-block px-3 py-1 rounded-full text-xs ${darkMode ? 'bg-pink-500/20 text-pink-300' : 'bg-pink-100 text-pink-600'}`}>
+                    Certified
+                  </div>
+                </div>
+              </div>
+
+              {/* MERN Full Stack */}
+              <div className={`certification_card ${darkMode ? 'bg-box-color' : 'bg-box-color-alt'} transition-transform duration-300 hover:scale-105`}
+                style={{
+                  boxShadow: darkMode ? '0 2px 4px pink' : '0 2px 4px hsla(var(--second-hue), 8%, 54%)',
+                  padding: '2rem',
+                  borderRadius: '1.25rem',
+                  minHeight: '200px',
+                  display: 'flex',
+                  flexDirection: 'column',
+                }}>
+                <i className="bx bx-code-alt text-4xl mb-4" style={{ color: darkMode ? '#FF73D3' : '#d946ef' }}></i>
+                <div className="mb-4">
+                  <h3 className="text-xl font-semibold" style={{ color: darkMode ? '#FF73D3' : '#d946ef' }}>MERN Full Stack</h3>
+                  <div style={{ paddingTop: '2rem' }}>
+                    <p className="text-sm" style={{ color: darkMode ? '#FF73D3' : '#d946ef', opacity: 0.8 }}>Knowledgecom</p>
+                  </div>
+                </div>
+                <div className="mt-auto">
+                  <p className="text-sm mb-2" style={{ color: darkMode ? '#FF73D3' : '#d946ef', opacity: 0.7 }}>August 2025</p>
+                  <div className={`inline-block px-3 py-1 rounded-full text-xs ${darkMode ? 'bg-pink-500/20 text-pink-300' : 'bg-pink-100 text-pink-600'}`}>
+                    Certified
+                  </div>
+                </div>
+              </div>
+
+              {/* Secure Programming with C */}
+              <div className={`certification_card ${darkMode ? 'bg-box-color' : 'bg-box-color-alt'} transition-transform duration-300 hover:scale-105`}
+                style={{
+                  boxShadow: darkMode ? '0 2px 4px pink' : '0 2px 4px hsla(var(--second-hue), 8%, 54%)',
+                  padding: '2rem',
+                  borderRadius: '1.25rem',
+                  minHeight: '200px',
+                  display: 'flex',
+                  flexDirection: 'column',
+                }}>
+                <i className="bx bx-shield text-4xl mb-4" style={{ color: darkMode ? '#FF73D3' : '#d946ef' }}></i>
+                <div className="mb-4">
+                  <h3 className="text-xl font-semibold mb-2" style={{ color: darkMode ? '#FF73D3' : '#d946ef' }}>Secure Programming with C</h3>
+                  <p className="text-sm" style={{ color: darkMode ? '#FF73D3' : '#d946ef', opacity: 0.8 }}>EC-Council</p>
+                </div>
+                <div className="mt-auto">
+                  <p className="text-sm mb-2" style={{ color: darkMode ? '#FF73D3' : '#d946ef', opacity: 0.7 }}>February 2025</p>
+                  <div className={`inline-block px-3 py-1 rounded-full text-xs ${darkMode ? 'bg-pink-500/20 text-pink-300' : 'bg-pink-100 text-pink-600'}`}>
+                    Certified
+                  </div>
+                </div>
+              </div>
+
+              {/* ICDL Big Data */}
+              <div className={`certification_card ${darkMode ? 'bg-box-color' : 'bg-box-color-alt'} transition-transform duration-300 hover:scale-105`}
+                style={{
+                  boxShadow: darkMode ? '0 2px 4px pink' : '0 2px 4px hsla(var(--second-hue), 8%, 54%)',
+                  padding: '2rem',
+                  borderRadius: '1.25rem',
+                  minHeight: '200px',
+                  display: 'flex',
+                  flexDirection: 'column',
+                }}>
+                <i className="bx bx-data text-4xl mb-4" style={{ color: darkMode ? '#FF73D3' : '#d946ef' }}></i>
+                <div className="mb-4">
+                  <h3 className="text-xl font-semibold" style={{ color: darkMode ? '#FF73D3' : '#d946ef' }}>ICDL Big Data</h3>
+                  <div style={{ paddingTop: '2rem' }}>
+                    <p className="text-sm" style={{ color: darkMode ? '#FF73D3' : '#d946ef', opacity: 0.8 }}>ICDL</p>
+                  </div>
+                </div>
+                <div className="mt-auto">
+                  <p className="text-sm mb-2" style={{ color: darkMode ? '#FF73D3' : '#d946ef', opacity: 0.7 }}>January 2025</p>
+                  <div className={`inline-block px-3 py-1 rounded-full text-xs ${darkMode ? 'bg-pink-500/20 text-pink-300' : 'bg-pink-100 text-pink-600'}`}>
+                    Certified
+                  </div>
+                </div>
+              </div>
+
+              {/* ICDL Digital Marketing */}
+              <div className={`certification_card ${darkMode ? 'bg-box-color' : 'bg-box-color-alt'} transition-transform duration-300 hover:scale-105`}
+                style={{
+                  boxShadow: darkMode ? '0 2px 4px pink' : '0 2px 4px hsla(var(--second-hue), 8%, 54%)',
+                  padding: '2rem',
+                  borderRadius: '1.25rem',
+                  minHeight: '200px',
+                  display: 'flex',
+                  flexDirection: 'column',
+                }}>
+                <i className="bx bx-trending-up text-4xl mb-4" style={{ color: darkMode ? '#FF73D3' : '#d946ef' }}></i>
+                <div className="mb-4">
+                  <h3 className="text-xl font-semibold" style={{ color: darkMode ? '#FF73D3' : '#d946ef' }}>ICDL Digital Marketing</h3>
+                  <div style={{ paddingTop: '2rem' }}>
+                    <p className="text-sm" style={{ color: darkMode ? '#FF73D3' : '#d946ef', opacity: 0.8 }}>ICDL</p>
+                  </div>
+                </div>
+                <div className="mt-auto">
+                  <p className="text-sm mb-2" style={{ color: darkMode ? '#FF73D3' : '#d946ef', opacity: 0.7 }}>December 2024</p>
+                  <div className={`inline-block px-3 py-1 rounded-full text-xs ${darkMode ? 'bg-pink-500/20 text-pink-300' : 'bg-pink-100 text-pink-600'}`}>
+                    Certified
+                  </div>
+                </div>
+              </div>
+
+              {/* Google Professional Cloud Architect - In Progress */}
+              <div className={`certification_card ${darkMode ? 'bg-box-color' : 'bg-box-color-alt'} transition-transform duration-300 hover:scale-105`}
+                style={{
+                  boxShadow: darkMode ? '0 2px 4px pink' : '0 2px 4px hsla(var(--second-hue), 8%, 54%)',
+                  padding: '2rem',
+                  borderRadius: '1.25rem',
+                  minHeight: '200px',
+                  display: 'flex',
+                  flexDirection: 'column',
+                }}>
+                <i className="bx bxl-google-cloud text-4xl mb-4" style={{ color: darkMode ? '#FF73D3' : '#d946ef' }}></i>
+                <div className="mb-4">
+                  <h3 className="text-xl font-semibold mb-2" style={{ color: darkMode ? '#FF73D3' : '#d946ef' }}>Google Professional Cloud Architect</h3>
+                  <p className="text-sm" style={{ color: darkMode ? '#FF73D3' : '#d946ef', opacity: 0.8 }}>Google</p>
+                </div>
+                <div className="mt-auto">
+                  <p className="text-sm mb-2" style={{ color: darkMode ? '#FF73D3' : '#d946ef', opacity: 0.7 }}>Expected: January 2026</p>
+                  <div className={`inline-block px-3 py-1 rounded-full text-xs ${darkMode ? 'bg-yellow-500/20 text-yellow-300' : 'bg-yellow-100 text-yellow-600'}`}>
+                    In Progress
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
           <section className="work section" id="work">
             <h2 className="section_title">Recent work</h2>
             <div className="work_filters flex justify-center items-center gap-3 mb-8">
