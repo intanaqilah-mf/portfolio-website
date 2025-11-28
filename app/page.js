@@ -702,7 +702,7 @@ export default function Home() {
                 <a href="https://www.linkedin.com/in/saidatul-aqilah-8a89661a0/" target="_blank" rel="noreferrer" className="footer_social-link">
                   <Image src="/linkedin.png" alt="LinkedIn" width='40' height='40' />
                 </a>
-                <a href="https://github.com/infaddil" target="_blank" rel="noreferrer" className="footer_social-link">
+                <a href="https://github.com/intanaqilah-mf" target="_blank" rel="noreferrer" className="footer_social-link">
                   <Image src="/github.png" alt="Github" width='40' height='40' />
                 </a>
               </ul>
